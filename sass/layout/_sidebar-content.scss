@@ -1,20 +1,66 @@
-.content-area {
-	float: right;
-	margin: 0 0 0 (-$size__site-sidebar);
-	width: $size__site-main;
-}
-
 .site-main {
-	margin: 0 0 0 $size__site-sidebar;
+	background: $grey;
+	padding-top: 2rem;
 }
 
 .site-content .widget-area {
-	float: left;
-	overflow: hidden;
 	width: $size__site-sidebar;
+	float: left;
+	padding: 2rem;
+	background:$chrome;
+	overflow: hidden;
 }
 
 .site-footer {
 	clear: both;
 	width: $size__site-main;
 }
+.entry-header,
+.entry-content,
+.entry-meta,
+.entry-footer,
+.tag-links,
+.post-navigation,
+.comments-area,
+.paging-navigation {
+    position: relative;
+    max-width: 780px;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+@media screen and (min-width: 1540px) {
+    .content-area {
+        float: right;
+        width: 100%;
+        margin-left: (-$size__site-sidebar);
+    }
+}// min-width: 1540px
+@media screen and (min-width: 1160px) and (max-width:1539px) {
+	.content-area {
+		width: $size__site-main;
+		float: right;
+		margin-left: (-$size__site-sidebar);
+		padding-left: $size__site-sidebar;
+	}// .content-area
+
+	.entry-header,
+	.entry-content,
+	.entry-meta,
+	.entry-footer,
+	.tag-links,
+	.post-navigation,
+	.comments-area,
+	.paging-navigation {
+	    margin-left: 0;
+	}
+}// min/max-width: 1160px / 1539px
+
+@media screen and (max-width: 1159px) {
+	.site-content .widget-area {
+		width: auto;
+		max-width: 780px;
+		float: none;
+		overflow: hidden;
+		margin: 1em auto 0;
+	}
+}// max-width: 1169px

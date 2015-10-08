@@ -7,7 +7,7 @@ module.exports = function(grunt){
 			dev: {
 				options: {
 					style: 'expanded',
-					sourcemap: 'none',
+					sourcemap: 'inline',
 				}, // options
 				files: {
 					'compiled/style-human.css': 'sass/style.scss'

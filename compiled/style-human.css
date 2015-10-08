@@ -41,8 +41,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
-# Flex
 --------------------------------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900|PT+Sans:400,700);
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -271,7 +271,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "PT Sans", "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
@@ -279,6 +279,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;
+  margin: 0 0 1rem 0;
 }
 
 p {
@@ -673,6 +674,73 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+.site-main {
+  background: #999;
+  padding-top: 2rem;
+}
+
+.site-content .widget-area {
+  width: 380px;
+  float: left;
+  padding: 2rem;
+  background: #c3c3c3;
+  overflow: hidden;
+}
+
+.site-footer {
+  clear: both;
+  width: 100%;
+}
+
+.entry-header,
+.entry-content,
+.entry-meta,
+.entry-footer,
+.tag-links,
+.post-navigation,
+.comments-area,
+.paging-navigation {
+  position: relative;
+  max-width: 780px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1540px) {
+  .content-area {
+    float: right;
+    width: 100%;
+    margin-left: -380px;
+  }
+}
+@media screen and (min-width: 1160px) and (max-width: 1539px) {
+  .content-area {
+    width: 100%;
+    float: right;
+    margin-left: -380px;
+    padding-left: 380px;
+  }
+
+  .entry-header,
+  .entry-content,
+  .entry-meta,
+  .entry-footer,
+  .tag-links,
+  .post-navigation,
+  .comments-area,
+  .paging-navigation {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 1159px) {
+  .site-content .widget-area {
+    width: auto;
+    max-width: 780px;
+    float: none;
+    overflow: hidden;
+    margin: 1em auto 0;
+  }
+}
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
@@ -692,12 +760,6 @@ a:hover, a:active {
 .single .byline,
 .group-blog .byline {
   display: inline;
-}
-
-.page-content,
-.entry-content,
-.entry-summary {
-  margin: 1.5em 0 0;
 }
 
 .page-links {
@@ -820,17 +882,4 @@ object {
   display: block;
 }
 
-/*--------------------------------------------------------------
-# Flex
---------------------------------------------------------------*/
-.site-content {
-  display: flex;
-}
-
-.content-area {
-  flex: 2;
-}
-
-.site-content .widget-area {
-  flex: 1;
-}
+/*# sourceMappingURL=style-human.css.map */
