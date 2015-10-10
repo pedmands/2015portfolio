@@ -1,12 +1,22 @@
 .site-main {
 	background: $light;
-	padding-top: 2rem;
+	padding-top: 60px;
 }
-
+@media screen and (max-width: 980px) {
+	.site-main {
+		padding-top: 80px;
+	}
+}
+@media screen and (max-width: 745px) {
+	.site-main {
+		padding-top: 90px;
+	}
+}
 .site-content .widget-area {
 	width: $size__site-sidebar;
 	float: left;
 	padding: 2rem;
+	padding-top: 60px;
 	background:$chrome;
 	overflow: hidden;
 }
