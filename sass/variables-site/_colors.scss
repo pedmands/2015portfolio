@@ -1,10 +1,12 @@
+$dark: #222;
 $charcoal: #333;
-$darkGray: #555;
-$grey: #999;
-$lightGray: #ddd;
-$chrome: #c3c3c3;
+$darkGray: #444;
+$grey: #555;
+$lightGray: #666;
+$chrome: #888;
+$light: #ccc;
 
-$color__background-body: #fff;
+$color__background-body: #000;
 $color__background-screen: #f1f1f1;
 $color__background-hr: #ccc;
 $color__background-button: #e6e6e6;
@@ -14,10 +16,10 @@ $color__background-ins: #fff9c0;
 $color__text-screen: #21759b;
 $color__text-input: #666;
 $color__text-input-focus: #111;
-$color__link: royalblue;
-$color__link-visited: purple;
-$color__link-hover: midnightblue;
-$color__text-main: #404040;
+$color__link: black;
+$color__link-visited: $darkGray;
+$color__link-hover: black;
+$color__text-main: $darkGray;
 
 $color__border-button: #ccc #ccc #bbb;
 $color__border-button-hover: #ccc #bbb #aaa;

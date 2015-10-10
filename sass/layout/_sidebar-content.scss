@@ -1,5 +1,5 @@
 .site-main {
-	background: $grey;
+	background: $light;
 	padding-top: 2rem;
 }
 
@@ -27,6 +27,7 @@
     max-width: 780px;
     padding: 0 2rem;
     margin: 0 auto;
+    width:100%;
 }
 @media screen and (min-width: 1540px) {
     .content-area {
@@ -56,11 +57,14 @@
 }// min/max-width: 1160px / 1539px
 
 @media screen and (max-width: 1159px) {
+	.site-content .content-area {
+		width:100%;
+	}
 	.site-content .widget-area {
 		width: auto;
 		max-width: 780px;
 		float: none;
 		overflow: hidden;
-		margin: 1em auto 0;
+		margin: 0 auto;
 	}
 }// max-width: 1169px

@@ -103,6 +103,16 @@ function undersoressass_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer Widges', 'undersoressass' ),
+		'id'            => 'sidebar-2',
+		'description'   => 'Footer widgets',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'undersoressass_widgets_init' );
 
@@ -119,6 +129,10 @@ function undersoressass_scripts() {
 	wp_enqueue_script( 'undersoressass-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
 	wp_enqueue_script('jQuery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js');
+
+	wp_enqueue_script( 'underscoressass-masonry', get_template_directory_uri() . '/js/masonry-settings.js', array('masonry'), '20151010', true );
+
+	wp_enqueue_script( 'underscoressass-superfish', get_template_directory_uri() . '/js/superfish.min.js', array('jQuery'));
 
 	wp_enqueue_script( 'undersoressass-scripts', get_template_directory_uri() . '/js/custom-scripts.js', array('jQuery'));
 
