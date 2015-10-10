@@ -13,31 +13,24 @@
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		<?php
-    /* translators: used between list items, there is a space after the comma */
-    $category_list = get_the_category_list( __( ', ', 'undersoressass' ) );
+	    /* translators: used between list items, there is a space after the comma */
+	    $category_list = get_the_category_list( __( ', ', 'undersoressass' ) );
 
-    if ( undersoressass_categorized_blog() ) {
-        echo '<div class="category-list">' . $category_list . '</div>';
-    }
-?>
-
-		<div class="entry-meta">
-			<?php undersoressass_posted_on(); ?>
+	    if ( undersoressass_categorized_blog() ) {
+	        echo '<div class="category-list">' . $category_list . '</div>';
+	    }
+		?>
+<div class="entry-meta">
+			<?php
+		    echo get_the_tag_list( '<ul><li><i class="fa fa-check-square-o"></i>', '</li><li><i class="fa fa-check-square-o"></i>', '</li></ul>' );
+			?>
 		</div><!-- .entry-meta -->
+		
 	</header><!-- .entry-header -->
-
+		
 	<div class="entry-content">
 		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'undersoressass' ),
-				'after'  => '</div>',
-			) );
-		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php undersoressass_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
 

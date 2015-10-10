@@ -1,9 +1,7 @@
 .site-main {
-	background: $light;
+
 	padding-top: 40px;
 }
-
-
 .site-content .widget-area {
 	width: $size__site-sidebar;
 	float: left;
@@ -11,6 +9,16 @@
 	padding-top: 40px;
 	background:$chrome;
 	overflow: hidden;
+}
+.site-content {
+    padding-bottom: 4em;
+    background: $light;
+}
+.single,.page {
+	.site-content { 
+    background: #fff; 
+    background: hsl(0, 0%, 100%);
+	}
 }
 
 .site-footer {

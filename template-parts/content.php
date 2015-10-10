@@ -14,10 +14,16 @@
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
 		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php undersoressass_posted_on(); ?>
-		</div><!-- .entry-meta -->
+		
 		<?php endif; ?>
+		<?php
+	    /* translators: used between list items, there is a space after the comma */
+	    $category_list = get_the_category_list( __( ', ', 'undersoressass' ) );
+
+	    if ( undersoressass_categorized_blog() ) {
+	        echo '<div class="category-list">' . $category_list . '</div>';
+	    }
+		?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -38,6 +44,8 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php undersoressass_entry_footer(); ?>
+		<?php
+		    echo get_the_tag_list( '<ul><li><i class="fa fa-check-square-o"></i>', '</li><li><i class="fa fa-check-square-o"></i>', '</li></ul>' );
+			?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

@@ -1,5 +1,5 @@
 .widget {
-	margin: 0 0 2.5em;
+	margin: 0 0 3.5em 0;
 	font-family: 'Lato', sans-serif;
    font-size: 16px;
    color:$darkGray;
@@ -22,8 +22,9 @@
 }// .widget
 
 .widget-title {
-	margin-bottom: 1em;
-	font-size: 24px;
+	margin-bottom: .5em;
+	padding-bottom: .25em;
+	font-size: 28px;
 	border-bottom: 2px solid $darkGray;
 	color:black;
 }
@@ -34,7 +35,8 @@
 }
 
 // Footer widgets
-.footer-widgets { margin: 0 auto; 
+.footer-widgets { 
+	margin: 0 auto; 
 	.widget_nav_menu a,
 	.widget_pages a {
 	    display: block;
@@ -46,11 +48,12 @@
 
 .footer-widgets .widget-title,
 .footer-widgets .widget a:hover {
-    color: $light;
-    border-color: $light;
+    color: white;
+    border-color: white;
 }
 
 .footer-widgets .widget {
+	color:$light;
     float: left;
     width: 320px;
     margin-bottom: 4em;
@@ -62,7 +65,8 @@
 .widget_recent_entries li:before,
 .widget_recent_comments li:before,
 .widget_archive li:before,
-.widget_taxonomy_list_widget li:before {
+.widget_taxonomy_list_widget li:before,
+.widget_categories li:before {
     display: block;
     float: left;
     margin-left: -1.5em;
@@ -80,9 +84,11 @@
 
 .widget_taxonomy_list_widget li:before { content: "\f14a"; }
 
-.widget_archive li, .widget_taxonomy_list_widget li { margin: 0 0 0 2.5em; }
+.widget_archive li, .widget_taxonomy_list_widget li, .widget_categories li { margin: 0 0 0 2.5em; }
 
 .widget_archive li:before { content: "\f187"; }
+
+.widget_categories li:before { content: "\f07b"; }
 
 .widget_nav_menu a,
 .widget_pages a {

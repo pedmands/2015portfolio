@@ -76,6 +76,7 @@ function undersoressass_setup() {
 endif; // undersoressass_setup
 add_action( 'after_setup_theme', 'undersoressass_setup' );
 
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
@@ -136,10 +137,11 @@ function undersoressass_scripts() {
 
 	wp_enqueue_script( 'undersoressass-scripts', get_template_directory_uri() . '/js/custom-scripts.js', array('jQuery'));
 
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
-}
+}//enqueue
 add_action( 'wp_enqueue_scripts', 'undersoressass_scripts' );
 
 /**
@@ -166,3 +168,4 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
