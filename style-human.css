@@ -37,6 +37,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Header
 	## Footer
    ## Posts and pages
+   ## Single
 	## Asides
 	## Comments
 # Infinite scroll
@@ -522,7 +523,7 @@ a:hover, a:active {
   font-weight: 300;
   font-family: 'Lato';
   letter-spacing: .75rem;
-  margin-top: -2.5px;
+  margin-top: -2.5;
   text-transform: uppercase;
   padding: 0;
 }
@@ -679,6 +680,10 @@ a:hover, a:active {
     margin-top: 0;
     padding: 30px 10px 20px 0;
     font-size: 20px;
+    margin: 0;
+    font-size: 20px;
+    padding: 25px 10px;
+    padding-left: 0;
     color: #ccc;
     letter-spacing: .5rem;
   }
@@ -1014,13 +1019,14 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .site-main {
   background: #ccc;
-  padding-top: 2rem;
+  padding-top: 40px;
 }
 
 .site-content .widget-area {
   width: 380px;
   float: left;
   padding: 2rem;
+  padding-top: 40px;
   background: #888;
   overflow: hidden;
 }
@@ -1189,6 +1195,9 @@ a:hover, a:active {
   margin: 0 0 1.5em;
 }
 
+/*--------------------------------------------------------------
+## Single
+--------------------------------------------------------------*/
 /*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/

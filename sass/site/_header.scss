@@ -1,6 +1,7 @@
 .site-header {
 	@include backImage('images/lander01.jpg',to bottom, 1, 0);
 	text-align: center;
+
 	background-color: #444;
 	padding-top:40px;
 }
@@ -14,6 +15,10 @@
 		padding-top: 80px;
 	}
 } //745
+
+
+
+
 .site-branding {
 	text-align: center;
 	display: block;

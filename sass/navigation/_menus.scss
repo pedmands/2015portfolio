@@ -29,7 +29,9 @@
 		font-weight: 300;
 		font-family: 'Lato';
 		letter-spacing: .75rem;
-		margin-top:-2.5px;
+
+		margin-top:-2.5;
+
 		text-transform: uppercase;
 		padding: 0;
 	}
@@ -175,9 +177,16 @@
 		text-align: right;
 		width:330px;
 		h1 a {
+
 			margin-top:0;
 			padding: 30px 10px 20px 0;
 			font-size: 20px;
+
+			margin:0;
+			font-size: 20px;
+			padding:25px 10px;
+			padding-left:0;
+
 			color:$light;
 			letter-spacing: .5rem;
 		}

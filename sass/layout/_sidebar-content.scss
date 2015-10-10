@@ -1,12 +1,14 @@
 .site-main {
 	background: $light;
-	padding-top: 2rem;
+	padding-top: 40px;
 }
+
 
 .site-content .widget-area {
 	width: $size__site-sidebar;
 	float: left;
 	padding: 2rem;
+	padding-top: 40px;
 	background:$chrome;
 	overflow: hidden;
 }
