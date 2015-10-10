@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
 
 var wheight = $(window).height(); 
 	
-	$('.fullheight').css('height', wheight);
+$('.fullheight').css('height', wheight);
 
 //adjust height of .fullheight elements on window resize
 $(window).resize(function() {
@@ -12,6 +12,8 @@ $(window).resize(function() {
 });
 
 var breakpoint = 745;
+
+// Superfish Setup
 var sf = $('ul.nav-menu');
 
 if($(document).width() >= breakpoint){
@@ -30,23 +32,25 @@ $(window).resize(function(){
     } else if($(document).width() < breakpoint) {
         sf.superfish('destroy');
     }
-});
+}); // End Superfish Setup
 
+// Nav Menu
 var navHover = function(){
     $('.main-navigation').mouseover(function (){
       if ( $(document).width() >= 745 ){
         $('.nav-logo').addClass('nav-logo-show');
-        $(this).css({'padding-top':'25px'});
+        $(this).css({'padding-top':'30px'});
       }
     }).mouseleave(function(){
       $('.nav-logo').removeClass('nav-logo-show');
       $(this).css({'padding-top':'0px'});
     });
   
-}
+}// Nav Hover
 
 navHover();
 
+// End Nav Menu
    
   	
 });

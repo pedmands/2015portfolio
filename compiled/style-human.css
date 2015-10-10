@@ -347,7 +347,7 @@ html {
 }
 
 body {
-  background: #000;
+  background: #ccc;
   /* Fallback for when there is no custom background color defined. */
 }
 
@@ -516,13 +516,13 @@ a:hover, a:active {
   transition: all .5s linear;
   z-index: 999;
 }
-.nav-logo h1 {
+.nav-logo h1 a {
   color: #ccc;
   font-size: 14px;
   font-weight: 300;
   font-family: 'Lato';
   letter-spacing: .75rem;
-  margin-top: -7.5px;
+  margin-top: -12.5px;
   text-transform: uppercase;
 }
 
@@ -530,7 +530,7 @@ a:hover, a:active {
   background: black;
   padding-top: 10px;
   opacity: 1;
-  height: 25px;
+  height: 30px;
 }
 
 .main-navigation ul {
@@ -1088,7 +1088,7 @@ a:hover, a:active {
 ## Header
 --------------------------------------------------------------*/
 .site-header {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05)), url("images/lander01.jpg");
+  background: linear-gradient(to bottom, black, transparent), url("images/lander01.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
@@ -1096,8 +1096,20 @@ a:hover, a:active {
   -o-background-size: cover;
   background-size: cover;
   text-align: center;
+  background-color: #444;
+  padding-top: 40px;
 }
 
+@media screen and (max-width: 980px) {
+  .site-header {
+    padding-top: 60px;
+  }
+}
+@media screen and (max-width: 745px) {
+  .site-header {
+    padding-top: 80px;
+  }
+}
 .site-branding {
   text-align: center;
   display: block;

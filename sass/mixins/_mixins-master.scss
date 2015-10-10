@@ -33,8 +33,8 @@
 @mixin backImage(
   $image,
   $grDir: to bottom,
-  $opStart: 0,
-  $opEnd: 0,
+  $opStart: 1,
+  $opEnd: 1,
   $bgPos: center center
   ) {
   background: linear-gradient(

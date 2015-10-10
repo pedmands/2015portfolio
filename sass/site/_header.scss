@@ -1,8 +1,19 @@
 .site-header {
-	@include backImage('images/lander01.jpg',to bottom, .5, .05);
+	@include backImage('images/lander01.jpg',to bottom, 1, 0);
 	text-align: center;
-
+	background-color: #444;
+	padding-top:40px;
 }
+@media screen and (max-width: 980px) {
+	.site-header {
+		padding-top: 60px;
+	}
+}// 980
+@media screen and (max-width: 745px) {
+	.site-header {
+		padding-top: 80px;
+	}
+} //745
 .site-branding {
 	text-align: center;
 	display: block;
