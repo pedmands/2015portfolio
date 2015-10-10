@@ -522,8 +522,9 @@ a:hover, a:active {
   font-weight: 300;
   font-family: 'Lato';
   letter-spacing: .75rem;
-  margin-top: -12.5px;
+  margin-top: -2.5px;
   text-transform: uppercase;
+  padding: 0;
 }
 
 .nav-logo-show {
@@ -674,11 +675,10 @@ a:hover, a:active {
     text-align: right;
     width: 330px;
   }
-  .nav-logo h1 {
-    margin: 0;
+  .nav-logo h1 a {
+    margin-top: 0;
+    padding: 30px 10px 20px 0;
     font-size: 20px;
-    padding: 20px 10px;
-    padding-left: 0;
     color: #ccc;
     letter-spacing: .5rem;
   }
