@@ -1,8 +1,22 @@
 .post-navigation, .posts-navigation {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+    max-width: 780px;
+    margin: 0 auto;
+    width:100%;
+    padding: 2rem;
 	.nav-previous {
 		float: left;
+		h1 {
+			font-size: 20px;
+		}
 	}
 	.nav-next {
 		float: right;
+		text-align: right;
+		h1 {
+			font-size: 20px;
+		}
 	}
 }

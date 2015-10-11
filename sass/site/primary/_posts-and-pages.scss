@@ -1,11 +1,13 @@
 .related_posts {
-    border-top: 2px solid black;
-    margin: 0 2rem;
-    padding-top: 2rem;
-    max-width:780px;
+    position: relative;
+    max-width: 780px;
+    width:100%;
+    padding: 2rem;
     ul { 
         list-style: none;
+        text-align: center;
         margin: 0;
+        padding:0;
         li {
             display: inline-block;
             width:200px;
@@ -162,6 +164,9 @@
     margin-left: .5rem;
     text-decoration: none;
 }
+.skills {
+    display: none;
+}
 
 //
 
@@ -169,11 +174,17 @@
 @media screen and (min-width: 1320px){
     .single .entry-meta {
         width: 200px;
+        border-left: 2px solid;
+        border-left-color: #ccc;
         position: absolute;
-        right: -200px;
+        right: -230px;
         top: 4rem;
         text-align: left;
         padding:0;
+        padding-left: 10px;
+    }
+    .skills {
+        display: block;
     }
 }
 // Pull images

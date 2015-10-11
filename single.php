@@ -17,6 +17,19 @@ get_header(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
+			<nav class="navigation post-navigation" role="navigation">
+			    <div class="post-nav-box clear">
+			        <h1 class="screen-reader-text"><?php _e( 'Post navigation', 'portfolio' ); ?></h1>
+			        <div class="nav-links">
+			            <?php
+			            previous_post_link( '<div class="nav-previous"><div class="nav-indicator">' . _x( '<i class="fa fa-chevron-left"></i>Previous Project', 'Previous project', 'portfolio' ) . '</div><h1>%link</h1></div>', '%title' );
+			            next_post_link(     '<div class="nav-next"><div class="nav-indicator">' . _x( 'Next Project<i class="fa fa-chevron-right"></i>', 'Next project', 'portfolio' ) . '</div><h1>%link</h1></div>', '%title' );
+			            ?>
+			        </div><!-- .nav-links -->
+			    </div><!-- .post-nav-box -->
+			</nav><!-- .navigation -->
+
+			<!-- Related Projects -->
 			<?php $orig_post = $post;
 				global $post;
 				$categories = get_the_category($post->ID);
@@ -26,12 +39,12 @@ get_header(); ?>
 				$args=array(
 				'category__in' => $category_ids,
 				'post__not_in' => array($post->ID),
-				'posts_per_page'=> 4, // Number of related posts that will be shown.
+				'posts_per_page'=> 3, // Number of related posts that will be shown.
 				'caller_get_posts'=>1
 				);
 				$my_query = new wp_query( $args );
 				if( $my_query->have_posts() ) {
-				echo '<div class="related_posts"><h3>Related Projects</h3><ul>';
+				echo '<div class="related_posts"><h2>Related Projects</h2><ul>';
 				while( $my_query->have_posts() ) {
 				$my_query->the_post();?>
 				<li><div class="related_thumb"><a href="<? the_permalink()?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_post_thumbnail(); ?></a></div>
@@ -48,7 +61,6 @@ get_header(); ?>
 			wp_reset_query(); ?>
 
 		<?php endwhile; // End of the loop. ?>
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

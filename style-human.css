@@ -796,11 +796,27 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Post Navigation
 --------------------------------------------------------------*/
+.post-navigation, .posts-navigation {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  max-width: 780px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 2rem;
+}
 .post-navigation .nav-previous, .posts-navigation .nav-previous {
   float: left;
 }
+.post-navigation .nav-previous h1, .posts-navigation .nav-previous h1 {
+  font-size: 20px;
+}
 .post-navigation .nav-next, .posts-navigation .nav-next {
   float: right;
+  text-align: right;
+}
+.post-navigation .nav-next h1, .posts-navigation .nav-next h1 {
+  font-size: 20px;
 }
 
 /*--------------------------------------------------------------
@@ -1069,9 +1085,8 @@ a:hover, a:active {
 .entry-meta,
 .entry-footer,
 .tag-links,
-.post-navigation,
 .comments-area,
-.paging-navigation {
+.related_posts {
   position: relative;
   max-width: 780px;
   padding: 0 2rem;
@@ -1101,7 +1116,8 @@ a:hover, a:active {
   .tag-links,
   .post-navigation,
   .comments-area,
-  .paging-navigation {
+  .paging-navigation,
+  .related_posts {
     margin-left: 0;
   }
 }
@@ -1201,14 +1217,16 @@ a:hover, a:active {
 ## Posts and pages
 --------------------------------------------------------------*/
 .related_posts {
-  border-top: 2px solid black;
-  margin: 0 2rem;
-  padding-top: 2rem;
+  position: relative;
   max-width: 780px;
+  width: 100%;
+  padding: 2rem;
 }
 .related_posts ul {
   list-style: none;
+  text-align: center;
   margin: 0;
+  padding: 0;
 }
 .related_posts ul li {
   display: inline-block;
@@ -1366,14 +1384,25 @@ a:hover, a:active {
   text-decoration: none;
 }
 
+.skills {
+  display: none;
+}
+
 @media screen and (min-width: 1320px) {
   .single .entry-meta {
     width: 200px;
+    border-left: 2px solid;
+    border-left-color: #ccc;
     position: absolute;
-    right: -200px;
+    right: -230px;
     top: 4rem;
     text-align: left;
     padding: 0;
+    padding-left: 10px;
+  }
+
+  .skills {
+    display: block;
   }
 }
 /* Alignment responsive */

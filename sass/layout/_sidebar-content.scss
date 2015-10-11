@@ -30,9 +30,8 @@
 .entry-meta,
 .entry-footer,
 .tag-links,
-.post-navigation,
 .comments-area,
-.paging-navigation {
+.related_posts {
     position: relative;
     max-width: 780px;
     padding: 0 2rem;
@@ -61,7 +60,8 @@
 	.tag-links,
 	.post-navigation,
 	.comments-area,
-	.paging-navigation {
+	.paging-navigation,
+	.related_posts {
 	    margin-left: 0;
 	}
 }// min/max-width: 1160px / 1539px

@@ -21,6 +21,7 @@
 	    }
 		?>
 <div class="entry-meta">
+	<h3 class="skills">Skills:</h3>
 			<?php
 		    echo get_the_tag_list( '<ul><li><i class="fa fa-check-square-o"></i>', '</li><li><i class="fa fa-check-square-o"></i>', '</li></ul>' );
 			?>
