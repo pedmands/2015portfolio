@@ -1,0 +1,55 @@
+/*
+Theme Name: undersoresass
+Layout: No sidebar
+*/
+
+.page .site-content { 
+    background: #fff; 
+    background: hsl(0, 0%, 100%);
+}
+
+.site-footer {
+    clear: both;
+    width: 100%;
+}
+
+.entry-header,
+.page-header,
+.entry-content,
+.entry-footer,
+.tag-links,
+.post-navigation,
+.comments-area,
+.paging-navigation {
+    position: relative;
+    max-width: 780px;
+
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+#main {
+    padding-left: 0;
+}
+
+#primary {
+    width: 100%;
+}
+#colophon {
+        padding-left: 0;
+	clear: both;
+	width: $size__site-main;
+
+}
+.page-header,
+.paging-navigation {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+    list-style-type: none;
+    background: #fff;
+}
+
+.page-header {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}

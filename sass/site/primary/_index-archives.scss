@@ -1,7 +1,11 @@
 /*--------------------------------------------------------------
 Index and Archive
 --------------------------------------------------------------*/
-
+.archive {
+	.page-title {
+		margin-bottom: 0;
+	}
+}
 .continue-reading {
 	display: inline-block;
     text-align: right;
@@ -11,3 +15,12 @@ Index and Archive
 }
 
 .continue-reading i { margin-left: .5em; }
+
+.taxonomy-description {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-size: 22px;
+    p {
+    	margin: 0;
+    }
+}

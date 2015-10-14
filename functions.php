@@ -16,6 +16,10 @@ if ( ! function_exists( 'undersoressass_setup' ) ) :
  * as indicating support for post thumbnails.
  */
 function undersoressass_setup() {
+    
+    // This theme styles the visual editor to resemble the theme style.
+    $font_url = 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,900|PT+Sans:400,700|Lato:100,300,400,400italic,700,900';
+    add_editor_style( array( 'inc/editor-style.css', str_replace( ',', '%2C', $font_url ) ) );
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
@@ -138,7 +142,10 @@ function undersoressass_scripts() {
 	wp_enqueue_script( 'underscoressass-superfish', get_template_directory_uri() . '/js/superfish.min.js', array('jQuery'));
 
 	wp_enqueue_script( 'undersoressass-scripts', get_template_directory_uri() . '/js/custom-scripts.js', array('jQuery'));
-
+        
+        if (is_page_template('page-templates/page-nosidebar.php')) {
+            wp_enqueue_style( 'no-sidebar' , get_template_directory_uri() . '/layouts/no-sidebar.css');
+        }
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
