@@ -1218,13 +1218,6 @@ body a:hover {
   }
 }
 @media screen and (min-width: 1160px) and (max-width: 1539px) {
-  .content-area {
-    width: 100%;
-    float: right;
-    margin-right: -380px;
-    padding-right: 380px;
-  }
-
   .entry-header,
   .entry-content,
   .entry-meta,
@@ -1355,9 +1348,14 @@ body a:hover {
 ## Posts and pages
 --------------------------------------------------------------*/
 @media screen and (min-width: 1160px) {
-  .single-post #secondary {
-    position: fixed;
+  .home .content-area,
+  .archive .content-area {
+    width: 100%;
+    float: right;
+    margin-left: -380px;
+    padding-left: 380px;
   }
+
   .single-post .content-area {
     padding-right: 0;
     margin-right: 0;
@@ -1366,11 +1364,12 @@ body a:hover {
     float: left;
   }
   .single-post .site-main {
-    padding-right: 0;
+    padding-left: 380px;
     margin-right: 0;
-    margin-left: 380px;
     max-width: 100%;
-    float: left;
+  }
+  .single-post #secondary {
+    position: fixed;
   }
 }
 .related_posts {
