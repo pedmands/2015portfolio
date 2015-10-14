@@ -1042,7 +1042,7 @@ a:hover.page-numbers {
 .footer-widgets .widget {
   color: #ccc;
   float: left;
-  width: 200px;
+  width: 250px;
   margin-bottom: 4em;
   margin-left: 25px;
   margin-right: 25px;
@@ -1221,8 +1221,8 @@ body a:hover {
   .content-area {
     width: 100%;
     float: right;
-    margin-left: -380px;
-    padding-left: 380px;
+    margin-right: -380px;
+    padding-right: 380px;
   }
 
   .entry-header,
@@ -1232,8 +1232,7 @@ body a:hover {
   .tag-links,
   .post-navigation,
   .comments-area,
-  .paging-navigation,
-  .related_posts {
+  .paging-navigation {
     margin-left: 0;
   }
 }
@@ -1242,16 +1241,11 @@ body a:hover {
     margin: 0 auto;
   }
 
-  .site-content .content-area {
-    width: 100%;
-  }
-
   .site-content .widget-area {
     width: auto;
     max-width: 780px;
     float: none;
-    overflow: hidden;
-    margin: 0 auto;
+    margin: 1em auto 0;
   }
 }
 /*--------------------------------------------------------------
@@ -1268,17 +1262,17 @@ body a:hover {
 
 @media screen and (max-width: 980px) {
   .site-header {
-    padding-top: 60px;
+    padding-top: 20px;
   }
 }
 @media screen and (max-width: 745px) {
   .site-header {
-    padding-top: 80px;
+    padding-top: 40px;
   }
 }
 .sticky-post {
   position: absolute;
-  top: 1rem;
+  top: 2rem;
   right: 3rem;
   color: red;
 }
@@ -1359,6 +1353,20 @@ body a:hover {
 @media screen and (min-width: 1160px) {
   .single-post #secondary {
     position: fixed;
+  }
+  .single-post .content-area {
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 0;
+    max-width: 100%;
+    float: left;
+  }
+  .single-post .site-main {
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 380px;
+    max-width: 100%;
+    float: left;
   }
 }
 .related_posts {
@@ -1779,7 +1787,6 @@ object {
     margin-bottom: 0;
   }
 }
-.single-post-thumbnail img,
 .front-index-thumbnail img {
   display: block;
   margin: 0 auto;

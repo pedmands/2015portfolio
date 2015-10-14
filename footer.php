@@ -14,7 +14,7 @@
 	</div><!-- #content -->
 
     <?php 
-    if ( is_home() ) {
+    if ( !is_single() ) {
         echo '<footer id="colophon" class="site-footer" role="contentinfo">';
     } else {
         echo '<footer id="colophon" class="site-footer site-footer-full" role="contentinfo">';

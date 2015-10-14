@@ -7,19 +7,19 @@
 }
 @media screen and (max-width: 980px) {
 	.site-header {
-		padding-top: 60px;
+		padding-top: 20px;
 	}
 }// 980
 @media screen and (max-width: 745px) {
 	.site-header {
-		padding-top: 80px;
+		padding-top: 40px;
 	}
 } //745
 
 // Sticky Post
 .sticky-post {
     position: absolute;
-    top: 1rem;
+    top: 2rem;
     right: 3rem;
     color: red;
 }

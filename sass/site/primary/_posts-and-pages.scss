@@ -3,8 +3,25 @@
     .single-post {
         #secondary {
             position: fixed;
-        }
-    }
+        }// #secondary
+        .content-area {
+            padding-right: 0;
+            margin-right: 0;
+            margin-left: 0;
+            max-width: 100%;
+            float: left;
+            }
+            .site-main {
+            padding-right: 0;
+            margin-right: 0;
+            margin-left: 380px;
+            max-width: 100%;
+            float: left;
+            }
+
+
+
+    }// .single-post
 }
 .related_posts {
     position: relative;
