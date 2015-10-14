@@ -16,19 +16,6 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
-
-			<nav class="navigation post-navigation" role="navigation">
-			    <div class="post-nav-box clear">
-			        <h1 class="screen-reader-text"><?php _e( 'Post navigation', 'portfolio' ); ?></h1>
-			        <div class="nav-links">
-			            <?php
-			            previous_post_link( '<div class="nav-previous"><div class="nav-indicator">' . _x( '<i class="fa fa-chevron-left"></i>Previous Project', 'Previous project', 'portfolio' ) . '</div><h1>%link</h1></div>', '%title' );
-			            next_post_link(     '<div class="nav-next"><div class="nav-indicator">' . _x( 'Next Project<i class="fa fa-chevron-right"></i>', 'Next project', 'portfolio' ) . '</div><h1>%link</h1></div>', '%title' );
-			            ?>
-			        </div><!-- .nav-links -->
-			    </div><!-- .post-nav-box -->
-			</nav><!-- .navigation -->
-
 			<!-- Related Projects -->
 			<?php $orig_post = $post;
 				global $post;

@@ -3,7 +3,7 @@
 	text-align: center;
 
 	background-color: #444;
-	padding-top:40px;
+	
 }
 @media screen and (max-width: 980px) {
 	.site-header {
@@ -16,7 +16,13 @@
 	}
 } //745
 
-
+// Sticky Post
+.sticky-post {
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+    color: red;
+}
 
 
 .site-branding {

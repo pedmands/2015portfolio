@@ -44,21 +44,23 @@
 	    border-bottom: solid 1px white;
 	    text-decoration: none;
 	} //.widget_nav_menu a, .widget_pages a
+	
 }// .footer-widgets
 
-.footer-widgets .widget-title,
-.footer-widgets .widget a:hover {
+.footer-widgets .widget-title {
     color: white;
     border-color: white;
+    font-size: 20px;
+    font-weight: 900;
 }
 
 .footer-widgets .widget {
 	color:$light;
     float: left;
-    width: 320px;
+    width: 200px;
     margin-bottom: 4em;
-    margin-left:1.2em;
-    margin-right:1.2em;
+    margin-left:25px;
+    margin-right:25px;
 }// .footer-widgets
 
 // Custom Widget Icons

@@ -2,7 +2,7 @@
 jQuery(document).ready(function($){
     var $container = $('#footer-widgets');
     var $masonryOn;
-    var $columnWidth = 370;
+    var $columnWidth = 250;
     
     if ($(document).width() > 879) {;
         $masonryOn = true;

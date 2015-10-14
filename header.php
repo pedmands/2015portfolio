@@ -25,7 +25,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'undersoressass' ); ?></a>
 
 
-	<?php if ( is_front_page() && is_home() ) : ?>
+	<?php if ( is_home() && !is_paged() ) : ?>
 
 		
 

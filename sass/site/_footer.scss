@@ -6,6 +6,18 @@
 	color: white;
 	background-color: $darkGray;
 }
+.site-footer {
+	clear: both;
+	width: $size__site-main;
+}
+.site-footer-full {
+	@media screen and (min-width:1160px){
+		width: $size__site-main;
+		float: right;
+		margin-left: (-$size__site-sidebar);
+		padding-left: $size__site-sidebar;
+	}
+}
 
 .site-footer a {
 	color: white;
