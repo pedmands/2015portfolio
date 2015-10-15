@@ -1,10 +1,14 @@
 /*--------------------------------------------------------------
 Index and Archive
 --------------------------------------------------------------*/
-.archive {
+.archive, .single {
 	.page-title {
 		margin-bottom: 0;
+        padding-top: 25px;
 	}
+    #content {
+        padding-top:25px;
+    }
 }
 .continue-reading {
 	display: inline-block;

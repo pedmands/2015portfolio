@@ -1,4 +1,4 @@
-.page .entry-title,.page .widget-area {
+.page .entry-title{
     margin-top: 2rem;
 }
 .related_posts {
@@ -7,7 +7,7 @@
     width:100%;
     padding: 3rem 2rem;
     border-top: 1px solid #666;
-    margin: 0 auto;
+    margin: 0;
     ul { 
         list-style: none;
         text-align: center;
@@ -177,15 +177,12 @@
 // Responsive Meta
 @media screen and (min-width: 1320px){
     .single .entry-meta {
-        width: 150px;
-        border-left: 2px solid;
-        border-left-color: #ccc;
+        width: 175px;
         position: absolute;
-        right: -150px;
-        top: 4rem;
+        top: 40px;
+        right: 2rem;
         text-align: left;
         padding:0;
-        padding-left: 10px;
         li {
             display: block;
             margin-right: 0;

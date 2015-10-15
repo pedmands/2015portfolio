@@ -1,8 +1,8 @@
 .site-header {
-	@include backImage('images/lander01.jpg',to bottom, 1, 0);
+	@include backImage('images/splash.jpg',to bottom, 1, .5);
 	text-align: center;
-
 	background-color: #444;
+	background-attachment: fixed;
 	
 }
 @media screen and (max-width: 980px) {
@@ -27,30 +27,39 @@
 
 .site-branding {
 	text-align: center;
+	width: 100%;
 	display: block;
-	@include vertical-align();
+	top: 35%;
+	position: absolute;
+	@media screen and (max-width: 745px) {
+		top: 25%;
+	}
+
 }
 .title-box {
     width: 75%;
     max-width: 780px;
     padding: 1em;
     margin: 0 auto;
-    border: solid 1px rgba(255,255,255, .5);
-    background-size: 30px;
-    background-color: rgba($light, .15);
+    
 }
 .site-title a {
 	color: #fff;
 	text-decoration: none;
 	letter-spacing: 1rem;
 	text-transform: uppercase;
-	font-size: 1.5rem;
+	font-size: 2.75rem;
 	font-family: 'Lato';
 	font-weight: 300;
+	@media screen and (max-width: 745px) {
+		font-size: 1.5rem;
+	}
 }
 .site-description {
-	color: $chrome;
+	color: cornsilk;
 	letter-spacing: 2.5px;
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 	margin-bottom:.5em;
+	font-family: 'Source Sans Pro';
+	font-weight: 200;
 }

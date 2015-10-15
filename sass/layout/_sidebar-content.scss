@@ -1,9 +1,7 @@
-.paged,
-.single,
-.archive, {
-	.site-content {
-		margin-top: 45px;
-	}
+.single {
+    .entry-header {
+        max-width: 100%;
+    }
 }
 body {
 	.hentry {
@@ -36,7 +34,7 @@ body {
     padding-bottom: 4em;
     background: #b2b2b2 url(images/pattern.svg) repeat;
     .entry-header {
-	padding-top: 2rem;
+	padding-top: 40px;
 }
 }
 .single,.page {
@@ -101,14 +99,14 @@ body {
     }//  .HOME, .ARCHIVE
     .single-post, .page {
         .content-area {
-            padding-right: 0;
+            padding-left: 0;
             margin-right: 0;
-            margin-left: 0;
+            margin-left: 380px;
             max-width: 100%;
             float: left;
             }
         .site-main {
-            padding-left: 380px;
+            
             margin-right: 0;
             max-width: 100%;
             

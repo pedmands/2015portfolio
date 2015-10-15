@@ -2,20 +2,28 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
-	border-color: $grey;
-	border-radius: 3px;
-	background: red;
+	background: black;
+	    transition: all .5s linear;
+    display: block;
+    
+    max-width: 300px;
+    color: white;
+    padding: .5rem 2rem;
+    border: 1px solid white;
+    text-decoration: none;
+    text-transform: uppercase;
 	
 
 	&:hover {
-		border-color: $chrome;
+		background:white;
+		color:black;
+		border: 1px solid black;
 		
 	}
 
 	&:active,
 	&:focus {
-		border-color: $chrome;
+		
 		outline:none;
 		
 	}
