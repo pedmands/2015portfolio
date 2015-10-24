@@ -7,7 +7,7 @@
     width:100%;
     padding: 3rem 2rem;
     border-top: 1px solid #666;
-    margin: 0;
+    margin: 0 auto;
     ul { 
         list-style: none;
         text-align: center;
@@ -187,6 +187,11 @@
             display: block;
             margin-right: 0;
         }
+    }
+    .entry-content {
+        
+        max-width: 770px;
+        min-height: 50px;
     }
     .skills {
         display: block;
