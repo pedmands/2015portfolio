@@ -10,16 +10,17 @@
 	.tab {
 		transform: scale(0,0);
 		opacity: 0;
+		display: none;
 	}
 	.show {
 		opacity: 1;
 		transform: scale(1,1);
-		position: absolute !important;
-		top:0;
+		display: inline-block;
 	}
 	aside {
-		transition: opacity .5s ease-in-out;
+		transition: all .5s ease-in-out;
 		margin: 0 auto;
+
 	}// aside
 
 
@@ -34,7 +35,7 @@
 
 .portfolio {
    display: inline-block;
-   transition: all .5s lienar;
+   transition: all .5s linear;
    width:400px;
    height:250px;
    margin: 1rem 0;
