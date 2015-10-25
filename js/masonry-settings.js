@@ -133,7 +133,7 @@ jQuery(document).ready(function($){
         // initialize
         $container.masonry({
             columnWidth: $columnWidth,
-            gutter: 20,
+            gutter: 10,
             itemSelector: '.portfolio',
             isFitWidth: true,
             isAnimated: true
