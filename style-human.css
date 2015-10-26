@@ -453,6 +453,7 @@ textarea {
   color: #666;
   border: 1px solid #ccc;
   border-radius: 3px;
+  max-width: 100%;
 }
 input[type="text"]:focus,
 input[type="email"]:focus,
@@ -1509,7 +1510,7 @@ body a:hover {
   .entry-content p,
   .entry-content ul,
   .entry-content ol {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .entry-content blockquote p {
@@ -1893,6 +1894,7 @@ object {
 
 .portfolio_nav {
   text-align: center;
+  background: #eee;
   padding: 1rem 0;
   font-size: 25px;
 }
@@ -1982,6 +1984,9 @@ object {
 }
 .back-to:hover {
   color: #ccc;
+}
+.back-to:visited {
+  color: #fff;
 }
 .back-to i {
   margin-right: .5rem;
