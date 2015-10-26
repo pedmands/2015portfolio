@@ -1912,23 +1912,77 @@ object {
 /*--------------------------------------------------------------
 ## Showcase
 --------------------------------------------------------------*/
+.single-showcases .hentry {
+  margin: 0;
+}
 .single-showcases #content {
-  padding-top: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.single-showcases .entry-title {
+  margin: 0;
+}
+.single-showcases h3 {
+  margin: 0;
+  font-size: 20px;
+}
+.single-showcases .project-type {
+  text-align: center;
+  text-transform: uppercase;
+  background: #444;
+  padding: .5rem;
+  margin-bottom: 1rem;
+}
+.single-showcases .project-type a {
+  color: #fff;
+  font-weight: normal;
+}
+.single-showcases .languages {
+  margin-bottom: 1rem;
+}
+.single-showcases .software {
+  padding-bottom: 1rem;
+}
+.single-showcases .taxonomies {
+  background: #ddd;
+}
+.single-showcases .taxonomies a {
+  font-size: 18px;
 }
 
-#showcase-left, #showcase-right {
-  width: 50%;
+.showcase-content {
+  padding: 2rem;
 }
 
-#showcase-left {
-  float: left;
+.languages,
+.software {
+  padding: 0 2rem;
 }
 
-#showcase-right {
-  float: right;
-}
+@media screen and (min-width: 700px) {
+  .showcase-content {
+    width: 70%;
+    float: left;
+  }
 
+  .showcase-right {
+    float: right;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    width: 25%;
+  }
+}
 .back-to {
-  clear: both;
   display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background: #777;
+  padding: 1rem;
+}
+.back-to:hover {
+  color: #ccc;
+}
+.back-to i {
+  margin-right: .5rem;
 }
